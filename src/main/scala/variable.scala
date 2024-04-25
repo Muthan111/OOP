@@ -1,5 +1,5 @@
-object variable {
+object variable  {
   def main(args: Array[String]): Unit = {
-    
+  
   }
 }
