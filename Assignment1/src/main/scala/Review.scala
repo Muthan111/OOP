@@ -3,7 +3,7 @@ class Review( customer: Customer, product: Product,private var _details: String,
 
  def details =_details
  def reviewdate = _reviewdate
- def this() = this(new Customer("", 0, new Date(), "", "", "", "", 0),new Product(),  "",new Date())
+ def this() = this(new Customer("", 0, new Date(), "", "", "", "","", 0,1000),new Product(),  "",new Date())
  def details_= ( newDetails: String)  {
    _details = newDetails
  }
