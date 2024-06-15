@@ -13,5 +13,37 @@ class Admin(_name: String,
 
   }
 
+  override def register(name: String, email: String, password: String): Unit = {
+    name_=(name)
+    email_=(email)
+    password_=(password)
+
+    println(s"Admin registered.");
+  }
+
+  override def login(name: String, email: String, password: String): Unit = {
+    name_=(name)
+    email_=(email)
+    password_=(password)
+
+    println(s"User logged in.");
+  }
+  override def login(email: String, password: String): Unit = {
+    email_=(email)
+    password_=(password)
+    println(s"User logged in.");
+
+
+  }
+
+
+  override def logout(): Unit = {
+    print("Admin logged out");
+  }
+
+  override def viewProfile (): Unit = {
+    return name + " " + email + " " + age + "" + dob + adminID
+  }
+
 
 }

@@ -32,7 +32,24 @@ import java.util.Date
     println(s"User registered.");
 
   }
-  def login(): Unit = {
+  def login(name: String, email: String, password: String): Unit = {
+    name_=(name)
+    email_=(email)
+    password_=(password)
+
     println(s"User logged in.");
+  }
+  def login(email: String, password: String): Unit = {
+    email_=(email)
+    password_=(password)
+    println(s"User logged in.");
+
+
+  }
+  def logout(): Unit = {
+    print("User logged out");
+  }
+  def viewProfile (): Unit = {
+    return name + " " + email + " " + age + "" + dob
   }
 }

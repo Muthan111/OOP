@@ -19,6 +19,31 @@ class Customer(_name: String,
   def addLoyaltyPoints(points: Int): Unit = {
     _loyaltyPoints += points
   }
+  override def register(name: String, email: String, password: String): Unit = {
+    name_=(name)
+    email_=(email)
+    password_=(password)
+
+    println(s"Customer registered.");
+  }
+
+  override def login(name: String, email: String, password: String): Unit = {
+    name_=(name)
+    email_=(email)
+    password_=(password)
+
+    println(s"Customer logged in.");
+  }
+  override def login(email: String, password: String): Unit = {
+    email_=(email)
+    password_=(password)
+    println(s"Customer logged in.");
+
+
+  }
+  override def logout(): Unit = {
+    print("Customer logged out");
+  }
 
 
 }

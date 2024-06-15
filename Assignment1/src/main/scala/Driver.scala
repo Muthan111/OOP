@@ -12,6 +12,7 @@ object Driver {
   val myorder  = new Order
   myorder.cart(phone)
   myorder.displayCustomer(mycustomer)
+  print(mycustomer.viewProfile())
 
 
 
