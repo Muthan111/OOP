@@ -1,14 +1,14 @@
 import java.util.Date
-class Order
+class Order (_customer: Customer, _product: Product,  private var _quantity : Int = 0,
+private var _orderDate : Date );
 {
-  private var quantity : Int = 0
-  private var orderDate : Date = new Date()
-  def cart (product : Product): Unit = {
+
+
+  def cart (product : Product, quantity: Int): Unit = {
     println(product.name)
     println(product.color)
     println(product.model)
-
-
+    println(quantity)
 
   }
   def displayCustomer (customer: Customer): Unit = {

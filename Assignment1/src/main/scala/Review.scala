@@ -12,5 +12,9 @@ class Review( customer: Customer, product: Product,private var _details: String,
    details = "";
 
  }
+ def editReview ( descrptionChange: String): Unit = {
+   details = descrptionChange
+   return details
+ }
 
 }

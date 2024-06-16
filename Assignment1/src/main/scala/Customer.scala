@@ -44,6 +44,8 @@ class Customer(_name: String,
   override def logout(): Unit = {
     print("Customer logged out");
   }
-
+  override def viewProfile (): Unit = {
+    print(s"$name  , $email ")
+  }
 
 }

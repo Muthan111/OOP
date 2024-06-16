@@ -24,6 +24,7 @@ import java.util.Date
   def phone_= (value: String): Unit = _phone = value
   def address_= (value: String): Unit = _address = value
   def password_= (value: String): Unit = _password = value
+
   def register(name: String, email: String, password: String): Unit = {
     name_=(name)
     email_=(email)
@@ -50,6 +51,6 @@ import java.util.Date
     print("User logged out");
   }
   def viewProfile (): Unit = {
-    return name + " " + email + " " + age + "" + dob
+     print(s"$name  , $age, $dob, $email, $phone, $address, $password")
   }
 }
